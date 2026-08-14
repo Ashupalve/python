@@ -1,3 +1,8 @@
+#  Write a python function to print first n lines of the following pattern.
+# ***
+# **
+# *    for n = 3
+
 n = int(input("Enter the number: "))
 def star(n):
    for i in range(0,(6-n)): 
