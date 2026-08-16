@@ -3,10 +3,11 @@
 # **
 # *    for n = 3
 
-n = int(input("Enter the number: "))
-def star(n):
-   for i in range(0,(6-n)): 
-    print("*"* (3-i), end="")
-    print("")
+def pattern(n):
+    if(n==0):
+        return
+    print("*" * n)
+    pattern(n-1)
 
-star(n)
+n = int(input("Enter a number to print the pattern: "))
+pattern(n)
